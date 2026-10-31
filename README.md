@@ -6,6 +6,7 @@ My accepted LeetCode solutions, pushed here automatically every time I solve a p
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-vigesh-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/vigesh/)
 [![GitHub](https://img.shields.io/badge/GitHub-Vigesh--VS-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vigesh-VS)
+[![Synced by LeetSync](https://img.shields.io/badge/Synced%20by-LeetSync-000000?style=for-the-badge&logo=googlechrome&logoColor=white)](https://github.com/Vigesh-VS/LeetSync)
 
 <a href="https://leetcode.com/u/vigesh/">
   <img src="https://leetcard.jacoblin.cool/vigesh?theme=dark&font=Inter&ext=heatmap" alt="LeetCode stats for vigesh" />
@@ -17,7 +18,7 @@ My accepted LeetCode solutions, pushed here automatically every time I solve a p
 
 ## About
 
-Every solution in this repository passed all of LeetCode's test cases before it was committed. Nothing is copied in by hand: when a submission is **Accepted**, it is synced here by **LeetSync**, a Chrome extension I built for this.
+Every solution in this repository passed all of LeetCode's test cases before it was committed. Nothing is copied in by hand: when a submission is **Accepted**, it is synced here by **[LeetSync](https://github.com/Vigesh-VS/LeetSync)**, an open-source Chrome extension I built for this.
 
 - Only accepted submissions are pushed. Wrong answers, errors and "Run" attempts never are.
 - If I resubmit a problem with improved code, the file is updated with an `Update:` commit.
@@ -47,10 +48,12 @@ Each problem gets its own folder, named by its LeetCode number and title:
 ## How LeetSync works
 
 1. When I submit on leetcode.com, the extension waits for LeetCode's verdict.
-2. If it is **Accepted**, it reads the code, language, runtime and memory, plus the problem statement.
-3. It commits the solution and a problem README to this repository through the GitHub API.
+2. If it is **Accepted**, it double-checks with LeetCode that the submission is mine and new, then reads the code, language, runtime and memory, plus the problem statement.
+3. It commits the solution and a problem README to this repository in a single commit, through the GitHub API.
 
-LeetSync uses no third-party servers. It talks only to LeetCode (with my own session) and to `api.github.com`, using a token scoped to this one repository.
+LeetSync uses no third-party servers. It talks only to LeetCode (with my own session) and to GitHub, through a GitHub App that can access only this one repository.
+
+**Want the same for your own profile?** Get LeetSync from **[github.com/Vigesh-VS/LeetSync](https://github.com/Vigesh-VS/LeetSync/releases/latest)**. It's free and open source.
 
 ---
 
